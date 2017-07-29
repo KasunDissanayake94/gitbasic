@@ -1,18 +1,78 @@
-Let’s go through a simple example of branching and merging with a workflow that you might use in the real world. You’ll follow these steps:
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UCSC Home Page</title>
+	<link rel="stylesheet" type="text/css" href="css/new.css">
+</head>
+<body>
+<div class="wrapper">
+	<div class="top-bar clearfix">
+		<div class="top-bar-links"> 
+			<ul>
+				<li><a href="#">Login</a></li>
+				<li><a href="#">Student Profile</a></li>
+				<li><a href="#">Acadamic Details</a></li>
+				<li><a href="#">Examination Details</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</div>
+		<div class="search">
+			<form method="get" action="index.html">
+				<input type="search" name="searchbar">
+				<button type="submit">  </button>
+			</form>
+		</div>
+	</div>
+	<header>
+		<div class="image">
+			<img src="images/ucsc.png">
+		</div>	
+		<div class="logo" >
+			<h1> University of Colombo School of Computing</h1>
+			<p>Student Management System</p>
+		</div>
 
-Do work on a website.
+	</header>
 
-Create a branch for a new story you’re working on.
+	<div class="photo" >
+		<img src="images/ucsc1.jpg">
+	</div>
+	
+	<footer>
+		<div class="footercol clearfix"> 
+			<h4>Quick Links</h4>
+			<ul class="quicklinks">
+				<li><a href="#">Events</a></li>
+				<li><a href="#">Sports</a></li>
+				<li><a href="#">Hackathons</a></li>
+				<li><a href="#">Meetings</a></li>
+			</ul>
+		</div>
+		<div class="footercol clearfix">
+			<h4>Latest Blogs</h4>
+			
+		</div>
+		<div class="footercol clearfix">
+			<h4>Problems</h4>
+			<form action="index.html" class="problem">
+				<input type="name" name="name" placeholder="Name"><br>
+				<input type="email" name="email" placeholder="Email"><br>
+				<input type="text" name="subject" placeholder="Subject"><br>
+				<textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+				<button type="submit">Submit</button>
+			</form>
+			
+		</div>
+	</footer>
+	<div class="copyrights">
+		<div class="left ">
+			Copyrights &copy; All Rights Reserved
+		</div>
+		<div class="right">
+			Developed by University of Colombo School of Computing
+		</div>
+	</div>
+</div>
 
-Do some work in that branch.
-
-
-At this stage, you’ll receive a call that another issue is critical and you need a hotfix. You’ll do the following:
-
-Switch to your production branch.
-
-Create a branch to add the hotfix.
-
-After it’s tested, merge the hotfix branch, and push to production.
-
-Switch back to your original story and continue working.
+</body>
+</html>
