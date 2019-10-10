@@ -1,0 +1,29 @@
+To crate a branch 
+================================
+git branch <branch name>
+
+To check the branch 
+===============================
+git branch
+
+To see the changes
+================================
+git status
+
+To push changes to the Repo
+======================================
+git add <your changed files>
+git commit -m "Meaninfull Message"
+git push origin <your branch>
+git checkout <parent branch(dev)>
+git pull origin <parent branch(dev)>
+git checkout your current working branch
+git merge <parent branch(dev)>
+
+
+If there are any conflicts please fix them
+=====================================================
+git add <changed fix files>
+git commit -m "Message"
+git push 
+
