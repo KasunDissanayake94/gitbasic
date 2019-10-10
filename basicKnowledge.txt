@@ -1,4 +1,4 @@
-To crate a branch 
+To create a branch 
 ================================
 git branch <branch name>
 
