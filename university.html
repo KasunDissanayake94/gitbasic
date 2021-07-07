@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="en" dir="ltr" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="https://www.universityofcalifornia.edu/sites/all/themes/university-of-california/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="description" content="The University of California is the world’s leading public research university system. With 10 campuses, 5 medical centers, 3 national labs and a network of agricultural and natural resource centers, UC boasts large numbers of distinguished faculty and researchers in every field." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.universityofcalifornia.edu/" />
+<link rel="shortlink" href="https://www.universityofcalifornia.edu/" />
+<meta property="fb:app_id" content="1432472603669908" />
+<meta property="og:site_name" content="University of California" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.universityofcalifornia.edu/" />
+<meta property="og:title" content="University of California" />
+<meta property="og:description" content="The only world-class public research university for, by and of California." />
+<meta property="og:image" content="http://universityofcalifornia.edu/sites/default/files/ucal-fb-image.png" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="https://www.universityofcalifornia.edu/" />
+<meta name="twitter:title" content="University of California" />
+<meta name="twitter:description" content="The only world-class public research university for, by and of California." />
+
+	<title>University of California | The only world-class public research university for, by and of California.</title>
+
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="image_src" href="/sites/all/themes/university-of-california/assets/images/ucal-fb-image.jpg" />
+	<meta http-equiv="cleartype" content="on">
+	<meta name="google-site-verification" content="6a2ovdOyVm5F5jMt0tqOY23PzR_tWZMUHRxIYWM6Wbc" />
+
+	<link type="text/css" rel="stylesheet" href="https://www.universityofcalifornia.edu/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.universityofcalifornia.edu/sites/default/files/css/css_l-dpDwzUQSxvuZnUP-GBXp7UYHCPehpq3von_WJS8Fk.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.universityofcalifornia.edu/sites/default/files/css/css_YFIsQid46oWl97H5lwnpUEuvcx9onBWvXxhnY8nOgKI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.universityofcalifornia.edu/sites/default/files/css/css_47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU.css" media="all" />
+
+	<!--[if lte IE 9]>
+	<script src="/sites/all/themes/zen/js/html5.js"></script>
+	<script src="/sites/all/themes/zen/js/html5-respond.js"></script>
+	<link type="text/css" rel="stylesheet" href="/sites/all/themes/university-of-california/assets/css/release/styles-ie9.min.css" media="all">
+	<link type="text/css" rel="stylesheet" href="/sites/all/themes/university-of-california/assets/css/release/styles-ie8.min.css" media="all">
+	<![endif]-->
+
+	
+</head>
+
+<body class="html front not-logged-in no-sidebars page-node home no-js" >
+	<script type="text/javascript">
+		var body = document.getElementsByTagName('body')[0];
+		body.className = body.className.replace( 'no-js', '' );
+	</script>
+
+	<!--[if lt IE 8]>
+				<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+	<![endif]-->
+
+	
+	<a href="#main" class="skiplink" tabindex="1">Skip to Main Content</a>
+<!-- Beginning of Page -->
+<div class="page">
+
+	<!-- Lightbox -->
+	<div class="lightbox">
+		<div class="lightbox-background"></div>
+
+		<div class="lightbox-content-container">
+			<div class="sprites-lightbox-close lightbox-close pointer">&times;</div>
+			<div class="lightbox-content">
+				<header></header>
+				<section class="content">
+
+					<!-- Content populated dynamically -->
+
+				</section>
+				<footer></footer>
+			</div>
+		</div>
+	</div>
+	<!-- End Lightbox -->
+
+	<!-- Header -->
+	<header class="header main container" role="banner">
+				<h1 class="logo"><a href="/" rel="home"><img src="/sites/all/themes/university-of-california/assets/images/sprites/logo.png"  alt="University of California"></a></h1>
+
+		<ul class="mobile-nav-controls pointer">
+			<li class="mobile-menu"></li>
+			<li class="mobile-search"></li>
+		</ul>
+
+		<div class="nav-container">
+
+			
+				<div class="top-nav" role="complementary">
+					  <div class="region region-top-navigation">
+    <div id="block-menu-menu-top-menu" class="block block-menu top-menu-container first odd">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+						
+		<ul class="menu"><li class="menu__item is-leaf first leaf"><a href="http://admission.universityofcalifornia.edu/" class="menu__link">Admissions</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://jobs.universityofcalifornia.edu/" class="menu__link">Jobs</a></li>
+<li class="menu__item is-leaf last leaf"><a href="/uc-system/contact-us" class="menu__link">Contact</a></li>
+</ul>
+	</div>
+
+</div>
+<div id="block-menu-menu-social" class="block block-menu social-menu-container last even">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+						
+		<ul class="menu"><li class="menu__item is-leaf first leaf"><a href="https://www.facebook.com/universityofcalifornia" class="menu__link">Facebook</a></li>
+<li class="menu__item is-leaf leaf"><a href="https://twitter.com/UC_Newsroom" class="menu__link">Twitter</a></li>
+<li class="menu__item is-leaf last leaf"><a href="http://ucresearch.tumblr.com" class="menu__link">Tumblr</a></li>
+</ul>
+	</div>
+
+</div>
+  </div>
+				</div>
+
+
+			
+			
+				<nav class="main-nav" role="navigation">
+					  <div class="region region-main-navigation">
+    <div id="block-menu-block-1" class="block block-menu-block first odd">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+						
+		<div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="menu__item is-expanded first expanded menu-mlid-465"><a href="/news" class="menu__link">News</a><ul class="menu"><li class="menu__item is-expanded first expanded menu-mlid-468"><a href="/news" class="menu__link">All News</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-469"><a href="/news/research" class="menu__link">Research</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-470"><a href="/news/health" class="menu__link">Health</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-471"><a href="/news/arts-and-humanities" class="menu__link">Arts &amp; Humanities</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-472"><a href="/news/students-and-alumni" class="menu__link">Students &amp; Alumni</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-473"><a href="/news/faculty-and-staff" class="menu__link">Faculty &amp; Staff</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-474"><a href="/news/administration" class="menu__link">Administration</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-2464"><a href="/initiative/global-food-initiative" class="menu__link">Global Food Initiative</a></li>
+</ul></li>
+<li class="menu__item is-leaf leaf menu-mlid-475"><a href="/videos" class="menu__link">Video</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-476"><a href="/in-the-news" class="menu__link">In the News</a></li>
+<li class="menu__item is-expanded expanded menu-mlid-477"><a href="/press-room" class="menu__link">Press Room</a><ul class="menu"><li class="menu__item is-leaf first last leaf menu-mlid-1289"><a href="/press-room/contacts" class="menu__link">Media contacts</a></li>
+</ul></li>
+<li class="menu__item is-leaf leaf menu-mlid-547"><a href="/%23" title="Right Content" class="menu__link">Right Content</a>
+<a href="# " class="menu-attach-block-drop-link external expand-on-click" data-block-id="views|0d9428dc19f1f04c041041732d1aff01" id="#-drop-link-547">More</a><div class="menu-attach-block-wrapper orientation-vertical">
+	<div id="block-views-0d9428dc19f1f04c041041732d1aff01" class="block block-views first odd">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+						
+		<div class="view view-meganav-right-column view-id-meganav_right_column view-display-id-meganav_right_news view-dom-id-bf8f9ed680598962a0a772a6ee117fc2">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    
+<div class="meganav-right-content views-view-fields">
+
+	<a href="/press-room/uc-president-napolitano-statement-deferred-action-childhood-arrivals-program">
+			</a>
+
+	<p class="entry-title">
+		<a href="/press-room/uc-president-napolitano-statement-deferred-action-childhood-arrivals-program">
+			UC President Napolitano statement on the Deferred Action for Childhood Arrivals program		</a>
+	</p>
+
+	<div class="entry-body"><p>UC President Janet Napolitano weighs in on reports that the Trump administration will maintain the DACA program.</p>
+</div>
+
+</div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+	</div>
+
+</div>
+</div>
+</li>
+<li class="menu__item is-leaf last leaf menu-mlid-549"><a href="/%23" title="Lower Content" class="menu__link">Lower Content</a>
+<a href="# " class="menu-attach-block-drop-link external expand-on-click" data-block-id="views|tweets-block" id="#-drop-link-0">More</a><div class="menu-attach-block-wrapper orientation-horizontal">
+	<div id="block-views-tweets-block" class="block block-views even">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+						
+		<div class="view view-tweets view-id-tweets view-display-id-block view-dom-id-783e9e1103f133a6a3968d8f95280a72">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+<div class="twitter-feed views-view-fields">
+
+	<hr />
+	
+	<header>
+		<p><a href="https://twitter.com/UC_Newsroom" target="_self">@UC_Newsroom</a></p>
+	</header>
+
+	<div class="tweet-text">
+		<span class="field-content">A world without plastics seems unimaginable, yet their large-scale use only dates back to the 1950s <a target="_blank" rel="nofollow" class="twitter-timeline-link" href="http://twitter.com/ucsantabarbara" class="twitter-atreply">@ucsantabarbara</a>
+<a href="https://t.co/97IBx2XdlH">https://t.co/97IBx2XdlH</a></span>	</div>
+
+</div>
+</li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>
+	</div>
+
+</div>
+</div>
+</li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-2973"><a href="/initiative/carbon-neutrality-initiative" class="menu__link">Initiatives</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-2986"><a href="/initiative/carbon-neutrality-initiative" class="menu__link">Carbon Neutrality</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2977"><a href="/initiative/global-food-initiative" class="menu__link">Global Food</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2976"><a href="/initiative/innovation-and-entrepreneurship-initiative" class="menu__link">Innovation and Entrepreneurship</a></li>
+<li class="menu__item is-expanded expanded menu-mlid-3014"><a href="/initiative/student-opportunity" class="menu__link">Student Opportunity</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-3016"><a href="/initiative/student-opportunity/hbcu/partnerships-historically-black-colleges-and-universities" class="menu__link">Partnerships with Historically Black Colleges and Universities</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3018"><a href="/initiative/student-opportunity/ppfp/presidents-postdoctoral-fellowship-program" class="menu__link">President&#039;s Postdoctoral Fellowship Program</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3019"><a href="/initiative/student-opportunity/public-service-fellowships" class="menu__link">Public Service Fellowships</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3017"><a href="/initiative/student-opportunity/transfer/transfer-students-initiative" class="menu__link">Transfer Students Initiative</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-3015"><a href="/initiative/student-opportunity/undocumented-students" class="menu__link">Undocumented Students</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-3020"><a href="/initiative/uc-mexico-initiative/uc-mexico" class="menu__link">UC-Mexico</a><ul class="menu"><li class="menu__item is-leaf first last leaf menu-mlid-3600"><a href="/initiative/uc-mexico-initiative/nafta-conference" class="menu__link">The future of NAFTA and the state of U.S.-Mexico relations</a></li>
+</ul></li>
+<li class="menu__item is-leaf last leaf menu-mlid-2978">
+<a href="# " class="menu-attach-block-drop-link external expand-on-click" data-block-id="block|28" id="&lt;block&gt;-drop-link-2978">More</a><div class="menu-attach-block-wrapper orientation-horizontal">
+	<div id="block-block-28" class="block block-block odd">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+							<h2 class="block__title block-title">Presidential Initiatives</h2>
+				
+		<p><img alt="Janet Napolitano" src="/sites/default/files/janet-hd.jpg" /></p>
+
+<p>Public commitment. It's what the University of California delivers each and every day via dedication to an idea: teach for California, research for the world.</p>
+
+<p>President Napolitano has launched a series of initiatives meant to reinforce this mission and our commitment to honoring UC's historic social contract.</p>
+
+<p><em><a href="http://www.ucop.edu/president/">More about UC President Janet Napolitano</a></em></p>
+
+	</div>
+
+</div>
+</div>
+</li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-466"><a href="/uc-system" class="menu__link">UC System</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-551"><a href="/uc-system" class="menu__link">Overview</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-552"><a href="/uc-system/parts-of-uc" class="menu__link">Parts of UC</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-560"><a href="/uc-system/stewardship" class="menu__link">Stewardship</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-558"><a href="/uc-system/working-uc" class="menu__link">Working at UC</a></li>
+<li class="menu__item is-expanded expanded menu-mlid-559"><a href="/uc-system/leadership" class="menu__link">Leadership</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-1287"><a href="http://senate.universityofcalifornia.edu/" class="menu__link">Academic Senate</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1286"><a href="http://regents.universityofcalifornia.edu/" class="menu__link">Board of Regents</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-1288"><a href="/uc-system/office-of-the-president" class="menu__link">Office of the President</a></li>
+</ul></li>
+<li class="menu__item is-leaf last leaf menu-mlid-2536"><a href="/infocenter" class="menu__link">Information Center</a></li>
+</ul></li>
+<li class="menu__item is-expanded last expanded menu-mlid-1285"><a href="/support-uc" class="menu__link">Support UC</a><ul class="menu"><li class="menu__item is-expanded first expanded menu-mlid-3281"><a href="/support-uc/ucan" class="menu__link">Advocate</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-3285"><a href="/support-uc/ucan/about" class="menu__link">About the UC Advocacy Network</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3601"><a href="/support-uc/ucan/federal-budget/take-action" class="menu__link">Federal Budget</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3286"><a href="/support-uc/ucan/state-budget" class="menu__link">State Budget</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3367"><a href="/support-uc/ucan/research" class="menu__link">Research</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3287"><a href="/support-uc/ucan/enrollment" class="menu__link">Enrollment</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3368"><a href="/support-uc/ucan/education" class="menu__link">Education</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3288"><a href="/support-uc/ucan/campus-housing" class="menu__link">Campus Housing</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3369"><a href="/support-uc/ucan/health-care" class="menu__link">Health Care</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-3289"><a href="/support-uc/ucan/student-faculty-diversity" class="menu__link">Student &amp; Faculty Diversity</a></li>
+</ul></li>
+<li class="menu__item is-leaf leaf menu-mlid-3283"><a href="/support-uc/donate" class="menu__link">Donate</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3284"><a href="/support-uc/connect" class="menu__link">Connect</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-3282">
+<a href="# " class="menu-attach-block-drop-link external expand-on-click" data-block-id="block|43" id="&lt;block&gt;-drop-link-0">More</a><div class="menu-attach-block-wrapper orientation-vertical">
+	<div id="block-block-43" class="block block-block even">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+						
+		<p><a href="/support-uc/ucan"><img alt="UC Advocacy Network" src="/sites/default/files/ucan-tile-sm.jpg" /></a></p>
+
+<div class="entry-title"><a href="/support-uc/ucan">Advocate</a></div>
+
+<div class="entry-body">
+<p>Read up on the issues that are important to UC, share on social media and contact your legislators to ensure the university remains a hub of opportunity, excellence, and innovation.</p>
+
+<p><em><a href="/support-uc/ucan">Take Action</a></em></p>
+</div>
+
+	</div>
+
+</div>
+</div>
+</li>
+</ul></li>
+</ul></div>
+
+	</div>
+
+</div>
+<div id="block-block-15" class="block block-block block-search last even">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+						
+		<form action="/search-results" class="gss navbar-search" id="search-block-form" method="get">
+	<div class="container-inline">
+	<div class="form-item form-type-textfield form-item-search-block-form">
+	<label class="visuallyhidden" for="edit-search-block-form--2">Search</label><input tabindex="1" autocomplete="off" class="search-query form-text ui-autocomplete-input" id="edit-search-block-form--2" maxlength="128" name="qg" size="15" style="width: 7em;" title="Enter the terms you wish to search for." type="text" value="" />
+	</div>
+	<div class="form-actions form-wrapper" id="edit-actions">
+	<input class="form-submit" id="edit-submit" name="op" type="submit" value="Search" />
+	</div></div></form>
+	</div>
+
+</div>
+  </div>
+				</nav>
+
+			
+		</div>
+
+	</header>
+	<!-- End Header -->
+
+	<!-- Hero -->
+	
+		<section class="hero">  <div class="region region-hero">
+    <div id="block-views-homepage-hero-slides-block" class="block block-views first last odd">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+						
+		<div class="view view-homepage-hero-slides view-id-homepage_hero_slides view-display-id-block view-dom-id-913a0a8d0718bf793c4244288a2e022c">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    
+	<!-- Slide styles -->
+	<style type="text/css">/* Mobile First! */
+
+/* Hero Image Adjust */
+.view-content .hero-image img{
+  margin-left: -100px;
+}
+
+/* Content container */
+.hero-content-container {
+  height:100%;
+}
+
+/* Content */
+
+.hero-content h2, .hero-content .hero-text,
+.hero-content .hero-link {
+  display: block;
+  width: 100%;
+}
+
+.hero-content {
+  font-family: "KievitProBook", Arial, Sans-Serif;
+  width:100%;
+  text-align:left;
+  color: #E44C9A;
+  margin-top: 100px !important;
+}
+
+/* Content Header */
+
+.hero-content h2 {
+  margin-bottom: 2px !important;
+}
+
+.hero-content h2 span{
+  background-color: #E44C9A;
+  font-size: 30px;
+  display: inline-block;
+  font-family: "KievitProBold", Georgia, Serif;
+  text-transform: normal;
+  color: #ffe552;
+  line-height: 1em;
+  padding: 5px 5px 9px 5px;
+}
+
+.hero-content .hero-text {
+  margin: 30px 0 4px 0 !important;
+
+}
+
+.hero-content .hero-text span{
+  font-size: 16px;
+  color: #E44C9A;
+  background: #ffe552;
+  padding: 2px 5px;
+  display:inline-block;
+  margin-bottom: 2px;
+}
+.hero-content .hero-text span br {
+  display: none;
+}
+
+/* Hero link */
+.hero-content .hero-link {
+  font-size: 15px !important;
+  display: block;
+  width: auto;
+  margin: 30px 0 0 !important;
+}
+.hero-content .hero-link a {
+  display: inline-block !important;
+  color: #ffe552;
+  background-color: #E44C9A;
+  font-family:'KievitProBold',Arial,Sans-Serif;
+}
+.hero-content .hero-link a:hover {
+  display: inline-block;
+  color: #E44C9A;
+  background-color: #ffe552;
+  text-decoration:none;
+}
+
+/* Pointy triangle bit */
+.hero-link .right-triangle {
+  border-left-color: #E44C9A !important;
+}
+.hero-link:hover .right-triangle {
+  border-left-color: #ffe552 !important;
+}
+
+/*
+@media all and (min-width: 380px) {}
+@media all and (min-width: 380px) and (max-width: 414px){}
+@media all and (min-width: 460px) {}
+@media all and (min-width: 460px) and (max-width: 640px){}*/
+
+
+@media all and (min-width: 480px) {
+  .hero-content {
+    margin-top: 10px !important;
+  }
+  .hero-content .hero-text span br {
+    display: inline;
+  }
+}
+
+@media all and (min-width: 640px) {
+
+
+
+  /* Hero Image Adjust */
+  .view-content .hero-image img{
+    margin-left: -70px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  /* Hero Image Adjust */
+  .view-content .hero-image img{
+    margin-left: 0;
+  }
+  .hero-content h2 span{
+    font-size: 60px;
+    padding: 5px 10px 15px 10px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .hero-content {
+    margin-top: 30px !important;
+  }
+  .hero-content-container .hero-content{
+    padding-left: 200px;
+  }
+  .hero-content .hero-text {
+    margin: 30px 0 4px 0 !important;
+  }
+}
+@media all and (min-width: 1200px) {
+  .hero-content-container .hero-content{
+    padding-left: 230px;
+  }
+}</style>
+
+<!-- Slide image -->
+<div class="hero-image"><img typeof="foaf:Image" src="https://www.universityofcalifornia.edu/sites/default/files/herograd2017.jpg" width="2225" height="1272" alt="2017 graduation" title="2017 graduation" /></div>
+
+	<!-- HTML content -->
+	<div class="hero-content-container container">
+    <div class="hero-content">
+        <h2><span class="a">Congratulations</span></h2>
+        <h2><span class="b">graduates!</span></h2>
+        <div class="hero-text">
+          <span>67,000 new UC degree-holders prepare to</span><br>
+          <span>make their mark on the world.</span>
+        </div>
+        <div class="hero-link">
+            <a href="https://www.universityofcalifornia.edu/news/class-2017">Learn More<span class="right-triangle"></span></a>  
+        </div>
+        <!--<div class="hero-photo-credit"></div>-->
+    </div>
+</div>
+
+<script type="text/javascript">
+(function () {
+  var headerBigClick = false;
+
+  document.addEventListener("DOMContentLoaded", function(event) {
+    // Adjust for Lyon and Kievit rendering issues on Windows
+    if (navigator.appVersion.indexOf("Win")!=-1) {
+        $(".hero-content h2 span.a").css("padding","5px 10px 12px 10px");
+        $(".hero-content h2 span.b").css("padding","5px 10px 12px 10px");
+        $(".hero-content .hero-text").css("margin-top", "40px !important");
+        $(".hero-content h2").css("margin-top", "-10px");
+    }
+    if(headerBigClick){
+      $(".hero-content-container").click(function(){
+         window.location=$(this).find("a").attr("href");
+         return false;
+      });
+    }
+  });
+})();
+</script>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+	</div>
+
+</div>
+  </div>
+</section>
+
+		<!-- End Hero -->
+
+	<!-- Main Container-->
+	<div class="container main">
+
+		<div class="breadcrumb" role="navigation"><h2 class="element-invisible">You are here</h2><ol><li> </li></ol></div>
+		
+		
+		<div class="content">
+
+			<!-- Sidebar Container Desktop -->
+			
+				<aside class="sidebar-container" role="complementary">
+
+					
+						<div class="sidebar left-sidebar-upper" id="js-left-sidebar-upper-desktop">
+
+							<div class="background"></div>
+							  <div class="region region-left-sidebar-upper">
+    <div id="block-mailchimp-subscribe-mailchimp-subscribe" class="block block-mailchimp-subscribe first odd">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+							<h2 class="block__title block-title">UC Newsletter</h2>
+				
+		<form class="js-mailchimp-subscribe-form" action="//universityofcalifornia.us8.list-manage.com/subscribe/post?u=3ed27f61279491dd7506b90ab&amp;amp;id=16f65fb2a7" method="post" id="mailchimp-subscribe-form" accept-charset="UTF-8"><div><div class="mailchimp-subscribe-wrapper newsletter-subscribe"><fieldset class="form-wrapper" id="edit-subscribe--2"><legend><span class="fieldset-legend">Subscribe to get the latest headlines from the University of California.</span></legend><div class="fieldset-wrapper"><div class="form-item form-type-textfield form-item-EMAIL">
+  <label for="edit-email--2"><span class="visuallyhidden">Email Address</span> </label>
+ <input placeholder="email address" aria-required="true" aria-label="Your email address" type="text" id="edit-email--2" name="EMAIL" value="" size="60" maxlength="128" class="form-text" />
+</div>
+<div class="response"></div><div style="position: absolute; left: -5000px;" aria-hidden="true"><div class="form-item form-type-textfield form-item-b-3ed27f61279491dd7506b90ab-16f65fb2a7">
+ <input tabindex="-1" type="text" id="edit-b-3ed27f61279491dd7506b90ab-16f65fb2a7--2" name="b_3ed27f61279491dd7506b90ab_16f65fb2a7" value="" size="60" maxlength="128" class="form-text" />
+</div>
+</div><button class="btn" type="submit" name="submit" value="Subscribe" alt="Subscribe">Subscribe<input class="btn hide form-submit" type="submit" id="edit-submit--2" name="op" value="" /></button></div></fieldset>
+</div><input type="hidden" name="form_build_id" value="form-F2OQpny9DkS3enjFQscTANQFofqFFjOsUpbED8RyRZ0" />
+<input type="hidden" name="form_id" value="mailchimp_subscribe_form" />
+</div></form>
+	</div>
+
+</div>
+<div id="block-block-1" class="block block-block even">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+						
+		<h2>Admissions</h2>
+<div class="content">
+	<p>Learn more about applying as an undergraduate, or explore your options for graduate study at UC.</p>
+	<h3><a href="http://admission.universityofcalifornia.edu" title="Systemwide undergrad admissions site">Undergraduate</a></h3>
+</div>
+<div class="content">
+	<h3><a href="http://graduate.universityofcalifornia.edu/admissions/" title="Graduate admissions site">Graduate</a></h3>
+</div>
+<p>&nbsp;</p>
+
+	</div>
+
+</div>
+<div id="block-menu-menu-left-sidebar-upper-menu" class="block block-menu last odd">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+							<h2 class="block__title block-title">Campuses</h2>
+				
+		<ul class="menu"><li class="menu__item is-leaf first leaf"><a href="http://www.berkeley.edu" class="menu__link">UC Berkeley</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.ucdavis.edu" class="menu__link">UC Davis</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.uci.edu" class="menu__link">UC Irvine</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.ucla.edu" class="menu__link">UCLA</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.ucmerced.edu" class="menu__link">UC Merced</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.ucr.edu" class="menu__link">UC Riverside</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://ucsd.edu" class="menu__link">UC San Diego</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.ucsf.edu" class="menu__link">UC San Francisco</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.ucsb.edu/" class="menu__link">UC Santa Barbara</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.ucsc.edu" class="menu__link">UC Santa Cruz</a></li>
+<li class="menu__item is-leaf last leaf"><a href="/uc-system/parts-of-uc" class="menu__link">Medical Centers, labs and locations</a></li>
+</ul>
+	</div>
+
+</div>
+  </div>
+
+						</div>
+
+					
+					
+						<div class="sidebar left-sidebar-lower">
+
+							<div class="background"></div>
+							  <div class="region region-left-sidebar-lower">
+    <div id="block-block-2" class="block block-block first odd">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+						
+		<h2>Working at UC</h2><div class="content"><p>Be a part of this vibrant institution.</p><h3><a href="/uc-system/working-uc">Read More</a></h3></div>
+	</div>
+
+</div>
+<div id="block-block-3" class="block block-block last even">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+						
+		<h2>Accountability</h2>
+
+<div class="content">
+<p>UC is accountable to the people of California for how well it performs.</p>
+
+<h3><a href="http://accountability.universityofcalifornia.edu/">2017 report</a></h3>
+</div>
+
+<p>&nbsp;</p>
+
+	</div>
+
+</div>
+  </div>
+
+						</div>
+
+					
+				</aside>
+
+						<!-- End Sidebar Container Desktop -->
+
+			<!-- Main Page Content -->
+			<div id="main" tabindex="-1" class="page-content responsive-grid " role="main">
+
+				
+<nav class="news-filters-container " role="navigation">
+	<div class="news-filters">
+
+		<h2 class="pointer">Viewing: All News</h2>
+
+		<div class="filters">
+			<ul class="menu"><li class="menu__item is-leaf first leaf"><a href="/news" title="All" class="menu__link">All News</a></li>
+<li class="menu__item is-leaf leaf"><a href="/news/research" title="Research" class="menu__link">Research</a></li>
+<li class="menu__item is-leaf leaf"><a href="/news/health" title="Health" class="menu__link">Health</a></li>
+<li class="menu__item is-leaf leaf"><a href="/news/arts-and-humanities" title="Arts and Humanities" class="menu__link">Arts &amp; Humanities</a></li>
+<li class="menu__item is-leaf leaf"><a href="/news/students-and-alumni" title="Students and Alumni" class="menu__link">Students &amp; Alumni</a></li>
+<li class="menu__item is-leaf leaf"><a href="/news/faculty-and-staff" title="Faculty and Staff" class="menu__link">Faculty &amp; Staff</a></li>
+<li class="menu__item is-leaf last leaf"><a href="/news/administration" title="Administration" class="menu__link">Administration</a></li>
+</ul>		</div>
+
+	</div>
+</nav>
+
+<div id="block-block-10" class="block block-block homepage-grid block-homepage-grid last even">
+
+	
+		
+<div class="gridlet  two-column sticky internal pointer node-7613">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/tb_YT.jpg" alt="" title=""></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="/news/making-ultimate-mosquito-repellant">Making the ultimate mosquito repellent</a></h3>
+    
+    
+        <div class="entry-summary"><p>How getting to know a mosquito’s nose helped researchers sniff out better bug sprays.</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source ">UC Newsroom</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/research">Research</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  internal pointer node-7665">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/uc-davis-electric-vehicles.jpg" alt="UC Davis electric vehicles" title="UC Davis electric vehicles"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="/news/how-electric-vehicles-could-take-bite-out-oil-market">How electric vehicles could take a bite out of the oil market</a></h3>
+    
+    
+        <div class="entry-summary"><p>Shifting to plug-in cars wouldn't be enough to max out global oil consumption by 2040, but it could play a key role with the right mix of policies.</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source ">UC Davis via The Conversation</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/carbon-neutrality-initiative">Carbon Neutrality Initiative</a>,            <a href="/news/innovation-and-entrepreneurship-initiative">Innovation and Entrepreneurship Initiative</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  internal pointer node-7664">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/first-gen-faculty-uc-riverside.jpg" alt="UC Riverside first-generation faculty" title="UC Riverside first-generation faculty"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="/news/first-gen-faculty-campaign-highlights-professors-who-are-first-their-families-attend-college">‘First-gen faculty’ campaign highlights professors who are the first in their families to attend college</a></h3>
+    
+    
+        <div class="entry-summary"><p>Eighty-eight professors have self-identifed as first-generation so far, as a new campaign takes off on campus.</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source ">UC Riverside</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/faculty-and-staff">Faculty and Staff</a>,            <a href="/news/student-opportunity">Student Opportunity</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  internal pointer node-7663">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/virtual-reality-uc-santa-barbara.jpg" alt="UC Santa Barbara virtual reality" title="UC Santa Barbara virtual reality"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="/news/billion-tweets-turned-virtual-reality">A billion tweets turned into virtual reality</a></h3>
+    
+    
+        <div class="entry-summary"><p>UC Santa Barbara scholar is using billions of social media posts to create a virtual reality experience.</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source ">UC Santa Barbara</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/arts-and-humanities">Arts and Humanities</a>,            <a href="/news/innovation-and-entrepreneurship-initiative">Innovation and Entrepreneurship Initiative</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  internal pointer node-7662">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/wai-wai-nu-uc-berkeley.jpg" alt="Wai Wai Nu Berkeley Law" title="Wai Wai Nu Berkeley Law"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="/news/political-prisoner-international-inspiration">From political prisoner to international inspiration</a></h3>
+    
+    
+        <div class="entry-summary"><p>Wai Wai Nu intends to use her Berkeley Law education to reform the government in her home country of Burma.</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source ">UC Berkeley</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/arts-and-humanities">Arts and Humanities</a>,            <a href="/news/student-opportunity">Student Opportunity</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  internal pointer node-7661">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/oakland-promise-2.jpg" alt="Oakland Promise Scholars" title="Oakland Promise Scholars"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="/news/oakland-promise-scholars-head-uc">Oakland Promise Scholars head for UC</a></h3>
+    
+    
+        <div class="entry-summary"><p>Students awarded four-year scholarships in recognition of their academic achievements and volunteer service.</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source ">UC Newsroom</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/administration">Administration</a>,            <a href="/news/student-opportunity">Student Opportunity</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  internal pointer node-7660">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/ucla-chai-app.jpg" alt="UCLA chai app" title="UCLA chai app"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="/news/ucla-study-helps-californians-save-electricity-and-money-summer">UCLA study helps Californians save electricity — and money — this summer</a></h3>
+    
+    
+        <div class="entry-summary"><p>To participate in the study, download a free app, which transmits real-time updates to help you tweak your usage.</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source ">UCLA </div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/carbon-neutrality-initiative">Carbon Neutrality Initiative</a>,            <a href="/news/innovation-and-entrepreneurship-initiative">Innovation and Entrepreneurship Initiative</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  internal pointer node-7659">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/ucsf-esserman-hero-2.jpg" alt="UCSF Esserman WISDOM study" title="UCSF Esserman WISDOM study"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="/news/massive-study-launched-test-personalized-approach-breast-cancer-screening">Massive study launched to test personalized approach to breast cancer screening </a></h3>
+    
+    
+        <div class="entry-summary"><p>UC Health study aims to resolve ambiguity about the importance of annual mammograms.</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source ">UC Davis</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/health">Health</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  internal pointer node-7658">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/ban-box-hq.jpg" alt="Ban the Box" title="Ban the Box"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="/news/uc-changing-its-hiring-policy-remove-barriers-opportunity">UC is changing its hiring policy to remove barriers to opportunity</a></h3>
+    
+    
+        <div class="entry-summary"><p>In 'banning the box,' UC makes a change to avoid discouraging qualified previously incarcerated job applicants.</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source ">UC Newsroom</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/administration">Administration</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  internal pointer node-7657">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/kelly-snl-uc-irvine.jpg" alt="Chris Kelly UC Irvine" title="Chris Kelly UC Irvine"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="/news/uc-irvine-saturday-night-live">From UC Irvine to 'Saturday Night Live'</a></h3>
+    
+    
+        <div class="entry-summary"><p>'SNL' head writer Chris Kelly fell in love with improv as one of the campus' 'Live Nude People.'</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source ">UC Irvine</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/arts-and-humanities">Arts and Humanities</a>,            <a href="/news/students-and-alumni">Students and Alumni</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  internal pointer node-7656">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/sleep-sheep-ucsf.jpg" alt="UCSF sleep sheep" title="UCSF sleep sheep"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="/news/science-sleep-qa-neurology-professor-ying-hui-fu">The science of sleep: A Q&A with neurology professor Ying-Hui Fu</a></h3>
+    
+    
+        <div class="entry-summary"><p>From identifying how your genes want you to sleep to warding off Alzheimer's, learn the latest on shut-eye.</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source ">UCSF</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/health">Health</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  internal pointer node-7655">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/ucla-majorna-particle-2.jpg" alt="UCLA Majorana particle" title="UCLA Majorana particle"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="/news/ucla-led-research-offers-clearest-evidence-yet-long-sought-majorana-particle">UCLA-led research offers clearest evidence yet of long-sought Majorana particle</a></h3>
+    
+    
+        <div class="entry-summary"><p>Finding could provide the vehicle for carrying ‘qubits’ of data in quantum computing.</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source ">UCLA</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/innovation-and-entrepreneurship-initiative">Innovation and Entrepreneurship Initiative</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  external icon pointer node-7654">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/sugar-uc-berkeley-startup.jpg" alt="Sugarlogix UC Berkeley" title="Sugarlogix UC Berkeley"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="http://www.berkeleyside.com/2017/07/21/sugarlogix-prebiotic-sugar/">Sugarlogix is engineering a sugar that’s good for you</a></h3>
+    
+    
+        <div class="entry-summary"><p>Two UC Berkeley alums pioneer prebiotic sugars at their emerging startup.</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source link">Berkeleyside</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/innovation-and-entrepreneurship-initiative">Innovation and Entrepreneurship Initiative</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  internal pointer node-7653">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/cricket-service-dog-uc-davis.jpg" alt="dog UC Davis" title="dog UC Davis"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="/news/4-great-ways-keep-your-dog-safe-summer">4 great ways to keep your dog safe this summer</a></h3>
+    
+    
+        <div class="entry-summary"><p>Follow these tips from the School of Veterinary Medicine and enjoy the great oudoors worry-free.</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source ">UC Davis</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/health">Health</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  internal pointer node-7652">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/plastic-uc-santa-barbara-study.jpg" alt="UC Santa Barbara plastic study" title="UC Santa Barbara plastic study"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="/news/weve-created-83-billion-tons-plastic-waste-and-counting">8.3 billion metric tons of plastic ... and counting</a></h3>
+    
+    
+        <div class="entry-summary"><p>How did we create more tons of plastic than there are people on Earth?</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source ">UC Santa Barbara</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/research">Research</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  external icon pointer node-7651">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/uc-merced-summer-session.jpg" alt="UC Merced summer session" title="UC Merced summer session"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="http://abc30.com/education/uc-merced-partnering-up-with-fresno-schools-to-help-increase-african-american-student-population/2231348/">UC Merced partnering up with Fresno schools to help increase African American student population</a></h3>
+    
+    
+        <div class="entry-summary"><p>A spot on campus is guaranteed if students complete their requirements.</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source link">ABC 30</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/student-opportunity">Student Opportunity</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  internal pointer node-7650">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/pro-social-lyrics.jpg" alt="UCLA Billboard study" title="UCLA Billboard study"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="/news/how-billboard-misses-out-what-people-actually-want-hear">How Billboard misses out on what people actually want to hear</a></h3>
+    
+    
+        <div class="entry-summary"><p>Major record companies push antisocial messages but consumers are open to other options.</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source ">UCLA</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/arts-and-humanities">Arts and Humanities</a>,            <a href="/news/students-and-alumni">Students and Alumni</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  internal pointer node-7649">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/evolution-uc-santa-cruz.jpg" alt="UC Santa Cruz evolution" title="UC Santa Cruz evolution"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="/news/did-life-begin-land">Did life begin ... on land?</a></h3>
+    
+    
+        <div class="entry-summary"><p>A paradigm-shifting hypothesis could reshape our idea about the origin of life.</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source ">UC Santa Cruz</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/research">Research</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  internal pointer node-7648">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/zero-carbon-conference.jpg" alt="Zero carbon conference UC Santa Barbara" title="Zero carbon conference UC Santa Barbara"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="/news/how-nearly-zero-carbon-conference-can-be-better-conference">How a (nearly) zero-carbon conference can be a better conference</a></h3>
+    
+    
+        <div class="entry-summary"><p>Borrowing a page from Netflix can help slash university emissions by as much as a third.</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source ">UC Newsroom</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/carbon-neutrality-initiative">Carbon Neutrality Initiative</a>,            <a href="/news/faculty-and-staff">Faculty and Staff</a>          </div>
+
+      </footer>
+  </div>
+
+<div class="gridlet  internal pointer node-7647">
+
+  <header>
+        <div class="entry-image"><img typeof="foaf:Image" src="/sites/default/files/zebrafish-brain-uc-berkeley.jpg" alt="UC Berkeley zebrafish" title="UC Berkeley zebrafish"></div>
+    
+    <div class="entry-color"></div>
+  </header>
+
+  <section class="entry-content">
+    <div class="background"></div>
+
+        <h3 class="entry-title"><a class="node-url" href="/news/uc-berkeley-build-window-brain">UC Berkeley to build a window into the brain</a></h3>
+    
+    
+        <div class="entry-summary"><p>$21.6M awarded to create a 'brain modem' that can read and write to neurons, laying foundation for new therapies.</p>
+</div>
+    
+  </section>
+
+  
+  <footer>
+        <div class="entry-source ">UC Berkeley</div>
+    
+    
+    <div class="entry-categories">
+            <a href="/news/health">Health</a>,            <a href="/news/innovation-and-entrepreneurship-initiative">Innovation and Entrepreneurship Initiative</a>,            <a href="/news/research">Research</a>          </div>
+
+      </footer>
+  </div>
+
+		<!-- Add More -->
+					<div class="gridlet four-column load-more home">
+
+				<hr />
+
+				<a href="#" class="load-more-news">Load More</a>
+
+			</div>
+		
+	
+	
+</div>
+
+				
+			</div>
+			<!-- End Main Page Content -->
+
+			<!-- Sidebar Container Mobile -->
+			
+				<aside class="sidebar-container-mobile" role="complementary">
+
+					
+						<div class="sidebar left-sidebar-upper" id="js-left-sidebar-upper-mobile">
+
+							<div class="background"></div>
+							  <div class="region region-left-sidebar-upper">
+      <div class="region region-left-sidebar-upper">
+    <div id="block-mailchimp-subscribe-mailchimp-subscribe" class="block block-mailchimp-subscribe first odd">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+							<h2 class="block__title block-title">UC Newsletter</h2>
+				
+		<form class="js-mailchimp-subscribe-form" action="//universityofcalifornia.us8.list-manage.com/subscribe/post?u=3ed27f61279491dd7506b90ab&amp;amp;id=16f65fb2a7" method="post" id="mailchimp-subscribe-form" accept-charset="UTF-8"><div><div class="mailchimp-subscribe-wrapper newsletter-subscribe"><fieldset class="form-wrapper" id="edit-subscribe--2"><legend><span class="fieldset-legend">Subscribe to get the latest headlines from the University of California.</span></legend><div class="fieldset-wrapper"><div class="form-item form-type-textfield form-item-EMAIL">
+  <label for="edit-email--2"><span class="visuallyhidden">Email Address</span> </label>
+ <input placeholder="email address" aria-required="true" aria-label="Your email address" type="text" id="edit-email--2" name="EMAIL" value="" size="60" maxlength="128" class="form-text" />
+</div>
+<div class="response"></div><div style="position: absolute; left: -5000px;" aria-hidden="true"><div class="form-item form-type-textfield form-item-b-3ed27f61279491dd7506b90ab-16f65fb2a7">
+ <input tabindex="-1" type="text" id="edit-b-3ed27f61279491dd7506b90ab-16f65fb2a7--2" name="b_3ed27f61279491dd7506b90ab_16f65fb2a7" value="" size="60" maxlength="128" class="form-text" />
+</div>
+</div><button class="btn" type="submit" name="submit" value="Subscribe" alt="Subscribe">Subscribe<input class="btn hide form-submit" type="submit" id="edit-submit--2" name="op" value="" /></button></div></fieldset>
+</div><input type="hidden" name="form_build_id" value="form-F2OQpny9DkS3enjFQscTANQFofqFFjOsUpbED8RyRZ0" />
+<input type="hidden" name="form_id" value="mailchimp_subscribe_form" />
+</div></form>
+	</div>
+
+</div>
+<div id="block-block-1" class="block block-block even">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+						
+		<h2>Admissions</h2>
+<div class="content">
+	<p>Learn more about applying as an undergraduate, or explore your options for graduate study at UC.</p>
+	<h3><a href="http://admission.universityofcalifornia.edu" title="Systemwide undergrad admissions site">Undergraduate</a></h3>
+</div>
+<div class="content">
+	<h3><a href="http://graduate.universityofcalifornia.edu/admissions/" title="Graduate admissions site">Graduate</a></h3>
+</div>
+<p>&nbsp;</p>
+
+	</div>
+
+</div>
+<div id="block-menu-menu-left-sidebar-upper-menu" class="block block-menu last odd">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+							<h2 class="block__title block-title">Campuses</h2>
+				
+		<ul class="menu"><li class="menu__item is-leaf first leaf"><a href="http://www.berkeley.edu" class="menu__link">UC Berkeley</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.ucdavis.edu" class="menu__link">UC Davis</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.uci.edu" class="menu__link">UC Irvine</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.ucla.edu" class="menu__link">UCLA</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.ucmerced.edu" class="menu__link">UC Merced</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.ucr.edu" class="menu__link">UC Riverside</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://ucsd.edu" class="menu__link">UC San Diego</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.ucsf.edu" class="menu__link">UC San Francisco</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.ucsb.edu/" class="menu__link">UC Santa Barbara</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.ucsc.edu" class="menu__link">UC Santa Cruz</a></li>
+<li class="menu__item is-leaf last leaf"><a href="/uc-system/parts-of-uc" class="menu__link">Medical Centers, labs and locations</a></li>
+</ul>
+	</div>
+
+</div>
+  </div>
+  </div>
+
+						</div>
+
+					
+					
+						<div class="sidebar left-sidebar-lower">
+
+							<div class="background"></div>
+							  <div class="region region-left-sidebar-lower">
+      <div class="region region-left-sidebar-lower">
+    <div id="block-block-2" class="block block-block first odd">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+						
+		<h2>Working at UC</h2><div class="content"><p>Be a part of this vibrant institution.</p><h3><a href="/uc-system/working-uc">Read More</a></h3></div>
+	</div>
+
+</div>
+<div id="block-block-3" class="block block-block last even">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+						
+		<h2>Accountability</h2>
+
+<div class="content">
+<p>UC is accountable to the people of California for how well it performs.</p>
+
+<h3><a href="http://accountability.universityofcalifornia.edu/">2017 report</a></h3>
+</div>
+
+<p>&nbsp;</p>
+
+	</div>
+
+</div>
+  </div>
+  </div>
+
+						</div>
+
+					
+				</aside>
+
+						<!-- End Sidebar Container Mobile -->
+
+		</div>
+
+	</div>
+	<!-- End Main Container -->
+
+	<!-- Page Bottom -->
+	
+		<div class="page-bottom container">
+
+			  <div class="region region-bottom">
+    <div id="block-block-6" class="block block-block back-to-top-container first last odd">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+						
+		<p><a class="back-to-top" href="#">Back to Top</a></p>
+	</div>
+
+</div>
+  </div>
+
+		</div>
+
+		<!-- End Page Bottom -->
+
+	<!-- Footer -->
+	<footer>
+
+		<div class="container footer-content">
+
+			<div class="footer-link-container">
+
+									<div class="footer-include">
+						  <div class="region region-footer-include">
+    <div id="block-mailchimp-subscribe-mailchimp-footer-subscribe" class="block block-mailchimp-subscribe first last odd">
+
+	<header>
+		<div class="entry-color"></div>
+	</header>
+
+	<div class="block-content-wrapper">
+		<div class="background"></div>
+
+						
+		<form class="js-mailchimp-subscribe-form right" action="//universityofcalifornia.us8.list-manage.com/subscribe/post?u=3ed27f61279491dd7506b90ab&amp;amp;id=16f65fb2a7" method="post" id="mailchimp-footer-subscribe-form" accept-charset="UTF-8"><div><fieldset class="form-wrapper" id="edit-subscribe"><legend><span class="fieldset-legend">Subscribe to Our Newsletter</span></legend><div class="fieldset-wrapper"><div class="mailchimp-subscribe-wrapper form-wrapper" id="edit-container"><div class="form-item form-type-textfield form-item-EMAIL">
+  <label for="edit-email"><span class="visuallyhidden">Email Address</span> </label>
+ <input placeholder="Your email address" aria-required="true" aria-label="Your email address" type="text" id="edit-email" name="EMAIL" value="" size="60" maxlength="128" class="form-text" />
+</div>
+<div class="response"></div><div style="position: absolute; left: -5000px;" aria-hidden="true"><div class="form-item form-type-textfield form-item-b-3ed27f61279491dd7506b90ab-16f65fb2a7">
+ <input tabindex="-1" type="text" id="edit-b-3ed27f61279491dd7506b90ab-16f65fb2a7" name="b_3ed27f61279491dd7506b90ab_16f65fb2a7" value="" size="60" maxlength="128" class="form-text" />
+</div>
+</div><button class="btn text-hide" type="submit" name="submit" value="Subscribe" alt="Subscribe">Subscribe<input class="btn hide form-submit" type="submit" id="edit-submit" name="op" value="" /></button></div></div></fieldset>
+<input type="hidden" name="form_build_id" value="form-ijXyStrVtIJYXm_x5iLyI8XWd4N-VOxDwoIrB2a6VVI" />
+<input type="hidden" name="form_id" value="mailchimp_footer_subscribe_form" />
+</div></form>
+	</div>
+
+</div>
+  </div>
+					</div>
+				
+				<div class="footer-links left" role="complementary">
+					<ul class="links footer-links-menu"><li class="menu-894 first"><a href="http://www.ucop.edu/">Office of the President</a></li>
+<li class="menu-895"><a href="http://senate.universityofcalifornia.edu/">Academic Senate</a></li>
+<li class="menu-896 last"><a href="http://regents.universityofcalifornia.edu/">Board of Regents</a></li>
+</ul>				</div>
+
+				<div class="social right clear-right" role="complementary">
+					<ul class="links social-menu"><li class="menu-695 first"><a href="https://www.facebook.com/universityofcalifornia" title="Facebook">Facebook</a></li>
+<li class="menu-696"><a href="https://twitter.com/UC_Newsroom" title="Twitter">Twitter</a></li>
+<li class="menu-697 last"><a href="http://ucresearch.tumblr.com" title="Tumblr">Tumblr</a></li>
+</ul>				</div>
+
+				<p class="copyright left">Copyright &copy; The Regents of the University of California<span class="divider">|</span><a href="http://www.ucop.edu/terms/index.html">Terms of Use</a></p>
+			</div>
+
+
+		</div>
+
+	</footer>
+	<!-- End Footer -->
+
+</div>
+<!-- End of Page -->
+
+	
+	<script src="https://www.universityofcalifornia.edu/sites/default/files/js/js_tm1gahPj5RurExr4Zj4GdGvvL7W4-u6_XRVeEsXyp3Q.js"></script>
+<script src="https://www.universityofcalifornia.edu/sites/default/files/js/js_KCd8rbJYUruV1tRJnh4um34UYvyhlrSVCPR1jNko2h8.js"></script>
+<script src="https://www.universityofcalifornia.edu/sites/default/files/js/js_lAzq7fG1bwLKZsYaloVx5jcwO_B1LQ9JXh3m_AsNsIQ.js"></script>
+<script src="https://www.universityofcalifornia.edu/sites/default/files/js/js_v66vasK1jXWEpDf6ddOz8orLnrIjQsaqOlzFnNROSws.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"university_of_california","theme_token":"7zr_v-KSH7e0f5l-NkBOyRgCfwnnjdmye1NttgZgVPU","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/form.js":1,"sites\/all\/modules\/custom\/mailchimp_future_nafta\/mailchimp_future_nafta.js":1,"sites\/all\/modules\/mailchimp_subscribe\/mailchimp_subscribe.js":1,"sites\/all\/modules\/menu_attach_block\/menu_attach_block.js":1,"https:\/\/connect.soundcloud.com\/sdk.js":1,"sites\/all\/themes\/university-of-california\/assets\/scripts\/build\/vendor.js":1,"sites\/all\/themes\/university-of-california\/assets\/scripts\/build\/app.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/menu_attach_block\/menu_attach_block.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/tagclouds\/tagclouds.css":1,"sites\/all\/themes\/university-of-california\/assets\/css\/bootstrap.min.css":1,"sites\/all\/themes\/university-of-california\/assets\/css\/icons\/style.css":1,"sites\/all\/themes\/university-of-california\/assets\/css\/styles.css":1,"sites\/all\/themes\/university-of-california\/assets\/css\/styles-ie10.css":1,"sites\/all\/themes\/university-of-california\/system.menus.css":1,"sites\/all\/themes\/university-of-california\/system.messages.css":1,"sites\/all\/themes\/university-of-california\/system.theme.css":1}},"ckeditorHtmlbuttons":[{"title":"Blockquote Col-width","icon":"..\/..\/..\/..\/..\/..\/sites\/default\/files\/ckeditor_htmlbuttons\/comment.png","icon_clean":"\/sites\/default\/files\/ckeditor_htmlbuttons\/comment.png","html":"\u003Cblockquote class=\u0022blockquote col-width\u0022\u003E\r\n  \u003Cp\u003ESed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh.\u003C\/p\u003E\r\n  \u003Csmall\u003ECredit goes here\u003C\/small\u003E\r\n\u003C\/blockquote\u003E\r\n","name":"blockquote_col_width"},{"title":"Blockquote Full","icon":"..\/..\/..\/..\/..\/..\/sites\/default\/files\/ckeditor_htmlbuttons\/comment_add.png","icon_clean":"\/sites\/default\/files\/ckeditor_htmlbuttons\/comment_add.png","html":"\u003Cblockquote class=\u0022blockquote\u0022\u003E\r\n  \u003Cp\u003ESed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh.\u003C\/p\u003E\r\n  \u003Csmall\u003ECredit goes here\u003C\/small\u003E\r\n\u003C\/blockquote\u003E\r\n","name":"blockquote_full"},{"title":"Blockquote Half","icon":"..\/..\/..\/..\/..\/..\/sites\/default\/files\/ckeditor_htmlbuttons\/comment_delete_0.png","icon_clean":"\/sites\/default\/files\/ckeditor_htmlbuttons\/comment_delete_0.png","html":"\u003Cblockquote class=\u0022blockquote half\u0022\u003E\r\n  \u003Cp\u003ELorem ipsum dolor sit amet, consectetuer adipiscing elit.\u003C\/p\u003E\r\n  \u003Csmall\u003ECredit goes here\u003C\/small\u003E\r\n\u003C\/blockquote\u003E\r\n","name":"blockquote_half"},{"title":"Figure Half Pop","icon":"..\/..\/..\/..\/..\/..\/sites\/default\/files\/ckeditor_htmlbuttons\/control_play_blue.png","icon_clean":"\/sites\/default\/files\/ckeditor_htmlbuttons\/control_play_blue.png","html":"\u003Cfigure class=\u0022figure-half-pop\u0022\u003E\r\n  \u003Cdiv class=\u0022figure-image\u0022\u003E\u003Cimg src=\u0022https:\/\/cdn-images-1.medium.com\/max\/800\/1*E_o_2SAyqmoX73d-KpuVXA.jpeg\u0022\u003E\u003C\/div\u003E\r\n  \u003Cfigcaption\u003E\r\n    \u003Cp\u003EFigure_Caption_here\u003C\/p\u003E\r\n    \u003Cdiv\u003EPhoto_credit_here\u003C\/div\u003E\r\n  \u003C\/figcaption\u003E\r\n\u003C\/figure\u003E\r\n","name":"figure_half_pop"},{"title":"Figure Small Pop","icon":"..\/..\/..\/..\/..\/..\/sites\/default\/files\/ckeditor_htmlbuttons\/application_edit.png","icon_clean":"\/sites\/default\/files\/ckeditor_htmlbuttons\/application_edit.png","html":"\u003Cfigure class=\u0022figure-small-pop\u0022\u003E\r\n\u003Cdiv class=\u0022figure-image\u0022\u003E\u003Cimg src=\u0022\/sites\/default\/files\/uc_climatechange_illustrations_greenhouse-gas-emissions-icons-electricity.png\u0022 \/\u003E\u003C\/div\u003E\r\n\r\n\u003Cfigcaption\u003E\r\n\u003Cp\u003EFigure_Caption_here\u003C\/p\u003E\r\n\u003Cdiv\u003EPhoto_credit_here\u003C\/div\u003E\r\n\u003C\/figcaption\u003E\r\n\u003C\/figure\u003E\r\n","name":"figure_small_pop"},{"title":"Figure Small Pop, No Caption","icon":"..\/..\/..\/..\/..\/..\/sites\/default\/files\/ckeditor_htmlbuttons\/application.png","icon_clean":"\/sites\/default\/files\/ckeditor_htmlbuttons\/application.png","html":"\u003Cfigure class=\u0022figure-small-pop\u0022\u003E\r\n\u003Cdiv class=\u0022figure-image\u0022\u003E\u003Cimg src=\u0022\/sites\/default\/files\/uc_climatechange_illustrations_greenhouse-gas-emissions-icons-electricity.png\u0022 \/\u003E\u003C\/div\u003E\r\n\u003C\/figure\u003E\r\n","name":"figure_small_pop_no_caption"},{"title":"Figure Two Up","icon":"..\/..\/..\/..\/..\/..\/sites\/default\/files\/ckeditor_htmlbuttons\/control_pause_blue.png","icon_clean":"\/sites\/default\/files\/ckeditor_htmlbuttons\/control_pause_blue.png","html":"\u003Cfigure class=\u0022figure-twoup\u0022\u003E\r\n  \u003Cdiv class=\u0022figure-image1\u0022\u003E\u003Cimg src=\u0022https:\/\/cdn-images-1.medium.com\/max\/800\/1*E_o_2SAyqmoX73d-KpuVXA.jpeg\u0022\u003E\u003C\/div\u003E\r\n  \u003Cdiv class=\u0022figure-image2\u0022\u003E\u003Cimg src=\u0022https:\/\/cdn-images-1.medium.com\/max\/800\/1*E_o_2SAyqmoX73d-KpuVXA.jpeg\u0022\u003E\u003C\/div\u003E\r\n  \u003Cfigcaption\u003E\r\n    \u003Cp\u003EFigure_Caption_here\u003C\/p\u003E\r\n    \u003Cdiv\u003EPhoto_credit_here\u003C\/div\u003E\r\n  \u003C\/figcaption\u003E\r\n\u003C\/figure\u003E\r\n","name":"figure_two_up"},{"title":"Image (column width)","icon":"..\/..\/..\/..\/..\/..\/sites\/default\/files\/ckeditor_htmlbuttons\/image.png","icon_clean":"\/sites\/default\/files\/ckeditor_htmlbuttons\/image.png","html":"\u003Cp\u003E\u003Cimg alt=\u0022\u0022 src=\u0022https:\/\/cdn-images-1.medium.com\/max\/1000\/1*uD6C_sJORbJ6jFBZqOkH6Q.png\u0022 \/\u003E\u003C\/p\u003E\r\n","name":"image_column_width_"},{"title":"Image Pop","icon":"..\/..\/..\/..\/..\/..\/sites\/default\/files\/ckeditor_htmlbuttons\/image_add.png","icon_clean":"\/sites\/default\/files\/ckeditor_htmlbuttons\/image_add.png","html":"\u003Cp\u003E\u003Cimg alt=\u0022\u0022 class=\u0022image-full-pop\u0022 src=\u0022https:\/\/cdn-images-1.medium.com\/max\/1000\/1*uD6C_sJORbJ6jFBZqOkH6Q.png\u0022 \/\u003E\u003C\/p\u003E\r\n","name":"image_pop"},{"title":"Responsive Embed 16:9 Column Width","icon":"..\/..\/..\/..\/..\/..\/sites\/default\/files\/ckeditor_htmlbuttons\/film.png","icon_clean":"\/sites\/default\/files\/ckeditor_htmlbuttons\/film.png","html":"\u003Cdiv class=\u0022embed-responsive-16by9\u0022\u003E\r\n  \u003Ciframe allowfullscreen=\u0022\u0022 class=\u0022embed-responsive-item\u0022 frameborder=\u00220\u0022 height=\u0022315\u0022 src=\u0022https:\/\/www.youtube.com\/embed\/SqlfReFU8Kk?rel=0\u0026amp;showinfo=0\u0022 width=\u0022560\u0022\u003E\u003C\/iframe\u003E\r\n\u003C\/div\u003E\r\n","name":"responsive_embed_16_9_column_wid"},{"title":"Responsive Embed 16:9 Pop","icon":"..\/..\/..\/..\/..\/..\/sites\/default\/files\/ckeditor_htmlbuttons\/film_go.png","icon_clean":"\/sites\/default\/files\/ckeditor_htmlbuttons\/film_go.png","html":"\u003Cdiv class=\u0022embed-responsive-16by9-wide\u0022\u003E\r\n  \u003Ciframe allowfullscreen=\u0022\u0022 class=\u0022embed-responsive-item\u0022 frameborder=\u00220\u0022 height=\u0022315\u0022 src=\u0022https:\/\/www.youtube.com\/embed\/SqlfReFU8Kk?rel=0\u0026amp;showinfo=0\u0022 width=\u0022560\u0022\u003E\u003C\/iframe\u003E\r\n\u003C\/div\u003E\r\n","name":"responsive_embed_16_9_pop"}],"urlIsAjaxTrusted":{"\/\/universityofcalifornia.us8.list-manage.com\/subscribe\/post?u=3ed27f61279491dd7506b90ab\u0026amp;id=16f65fb2a7":true}});</script>
+
+	
+	<!-- Tracking -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()
+	{ (i[r].q=i[r].q||[]).push(arguments)}
+	,i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-18163990-1', 'universityofcalifornia.edu');
+	ga('send', 'pageview');
+	</script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"cf222f542f","applicationID":"5524217","transactionName":"M1AHYxMEDURYWhBQVgoaMEUISkxeV10BQRcUXRU=","queueTime":0,"applicationTime":25,"atts":"HxcEFVseHko=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
